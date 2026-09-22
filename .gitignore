@@ -1,1 +1,8 @@
-/.idea/
+# Dossiers de compilation (n'importe où dans le projet)
+**/bin/
+**/obj/
+
+# Configuration Rider / IDE (n'importe où dans le projet)
+**/.idea/
+**/.vs/
+*.user
