@@ -63,13 +63,14 @@
                             <Label Content="Quel tamagotchi aimeriez-vous ?" FontWeight="Medium"/>
                             <ComboBox Name="CBRace" HorizontalAlignment="Stretch"
                                       PlaceholderText="Choisissez une race" CornerRadius="8">
-                                <ComboBoxItem Content="Chat"/>
+                                <ComboBoxItem Content="Chat" />
                                 <ComboBoxItem Content="Chien"/>
                                 <ComboBoxItem Content="Lapin"/>
                             </ComboBox>
                         </StackPanel>
 
                         <Button Name="BTNValiderCreation" Content="Valider"
+                                Click="BTNValiderCreation_OnClick"
                                 HorizontalAlignment="Center" Padding="30 8"
                                 CornerRadius="8" Background="#8E44AD" Foreground="White"/>
                     </StackPanel>

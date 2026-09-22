@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "OzhALYE66UY=",
+  "dgSpecHash": "K3RZRVl3V28=",
   "success": true,
   "projectFilePath": "/home/Nwt/Code Projects/C#/AvaloniaUI/Tamagotchi/Tamagotchi/Tamagotchi.csproj",
   "expectedPackageFiles": [
@@ -30,6 +30,7 @@
     "/home/Nwt/.nuget/packages/skiasharp.nativeassets.macos/2.88.9/skiasharp.nativeassets.macos.2.88.9.nupkg.sha512",
     "/home/Nwt/.nuget/packages/skiasharp.nativeassets.webassembly/2.88.9/skiasharp.nativeassets.webassembly.2.88.9.nupkg.sha512",
     "/home/Nwt/.nuget/packages/skiasharp.nativeassets.win32/2.88.9/skiasharp.nativeassets.win32.2.88.9.nupkg.sha512",
+    "/home/Nwt/.nuget/packages/system.io.pipelines/8.0.0/system.io.pipelines.8.0.0.nupkg.sha512",
     "/home/Nwt/.nuget/packages/tmds.dbus.protocol/0.21.2/tmds.dbus.protocol.0.21.2.nupkg.sha512"
   ],
   "logs": [

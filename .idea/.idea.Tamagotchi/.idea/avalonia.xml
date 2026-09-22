@@ -8,6 +8,7 @@
         <entry key="Tamagotchi/GameView.axaml" value="Tamagotchi/Tamagotchi.csproj" />
         <entry key="Tamagotchi/MainWindow.axaml" value="Tamagotchi/Tamagotchi.csproj" />
         <entry key="Tamagotchi/view/CreationView.axaml" value="Tamagotchi/Tamagotchi.csproj" />
+        <entry key="Tamagotchi/view/GameView.axaml" value="Tamagotchi/Tamagotchi.csproj" />
         <entry key="Tamagotchi/view/MainWindow.axaml" value="Tamagotchi/Tamagotchi.csproj" />
       </map>
     </option>
