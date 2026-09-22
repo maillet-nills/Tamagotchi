@@ -1,0 +1,18 @@
+namespace Tamagotchi;
+
+public class Tamagotchi
+{
+    private string nom { get;  set; }
+    private Race race {  get;  set; }
+    private NvSatisfaction nvSatisfaction { get; set; }
+    private NvTaille nvTaille { get; set; }
+
+    public Tamagotchi(string nom, Race race, NvSatisfaction nvSatisfaction, NvTaille nvTaille)
+    {
+        this.nom = nom;
+        this.race = race;
+        this.nvSatisfaction = NvSatisfaction.Satisfait;
+        this.nvTaille = NvTaille.Petit;
+    }
+
+}
