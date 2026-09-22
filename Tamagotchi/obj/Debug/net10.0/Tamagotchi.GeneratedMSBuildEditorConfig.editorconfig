@@ -26,5 +26,8 @@ build_property.EnableCodeStyleSeverity =
 [/home/Nwt/Code Projects/C\#/AvaloniaUI/Tamagotchi/Tamagotchi/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[/home/Nwt/Code Projects/C\#/AvaloniaUI/Tamagotchi/Tamagotchi/CreationView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [/home/Nwt/Code Projects/C\#/AvaloniaUI/Tamagotchi/Tamagotchi/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

@@ -1,0 +1,89 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Tamagotchi.CreationView">
+    
+    <Panel>
+
+        <Rectangle>
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0%,0%" EndPoint="100%,100%">
+                    <GradientStop Color="#E7D9F7" Offset="0"/>
+                    <GradientStop Color="#D8F3E3" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <Canvas ClipToBounds="False">
+            <Ellipse Width="140" Height="140" Fill="#8E44AD" Opacity="0.12"
+                     Canvas.Left="-50" Canvas.Top="-60"/>
+            <Ellipse Width="90" Height="90" Fill="#27AE60" Opacity="0.15"
+                     Canvas.Left="320" Canvas.Top="30"/>
+            <Ellipse Width="60" Height="60" Fill="#27AE60" Opacity="0.10"
+                     Canvas.Left="30" Canvas.Top="480"/>
+            <Ellipse Width="180" Height="180" Fill="#8E44AD" Opacity="0.10"
+                     Canvas.Left="250" Canvas.Top="440"/>
+
+            <Polygon Points="0,60 60,60 30,0" Fill="#8E44AD" Opacity="0.12"
+                      Canvas.Left="330" Canvas.Top="200"/>
+            <Polygon Points="0,0 70,0 35,70" Fill="#27AE60" Opacity="0.12"
+                      Canvas.Left="-25" Canvas.Top="150"/>
+            <Polygon Points="0,50 50,50 25,0" Fill="#8E44AD" Opacity="0.10"
+                      Canvas.Left="20" Canvas.Top="20"/>
+        </Canvas>
+
+        <ScrollViewer Padding="20">
+            <StackPanel HorizontalAlignment="Center" Spacing="35" Width="340">
+
+                <!-- TOP -->
+                <Image Source="avares://Tamagotchi/assets/logo.png"
+                       Width="260" HorizontalAlignment="Center"/>
+
+                <!-- MIDDLE -->
+                <Border Background="#E6FFFFFF"
+                        CornerRadius="16" Padding="24"
+                        BoxShadow="0 4 12 0 #22000000">
+                    <StackPanel Spacing="16">
+
+                        <TextBlock Text="Donnez naissance à votre Tamagotchi !"
+                                   FontSize="18" FontWeight="SemiBold"
+                                   TextWrapping="Wrap"
+                                   HorizontalAlignment="Center"
+                                   TextAlignment="Center"/>
+
+                        <StackPanel Spacing="6">
+                            <Label Content="Donnez-lui un nom !" FontWeight="Medium"/>
+                            <TextBox Name="TBNom" Watermark="Nom du Tamagotchi"
+                                     CornerRadius="8" Padding="10 8"/>
+                        </StackPanel>
+
+                        <StackPanel Spacing="6">
+                            <Label Content="Quel tamagotchi aimeriez-vous ?" FontWeight="Medium"/>
+                            <ComboBox Name="CBRace" HorizontalAlignment="Stretch"
+                                      PlaceholderText="Choisissez une race" CornerRadius="8">
+                                <ComboBoxItem Content="Chat"/>
+                                <ComboBoxItem Content="Chien"/>
+                                <ComboBoxItem Content="Lapin"/>
+                            </ComboBox>
+                        </StackPanel>
+
+                        <Button Name="BTNValiderCreation" Content="Valider"
+                                HorizontalAlignment="Center" Padding="30 8"
+                                CornerRadius="8" Background="#8E44AD" Foreground="White"/>
+                    </StackPanel>
+                </Border>
+
+                <!-- BOTTOM -->
+                <StackPanel HorizontalAlignment="Center" Spacing="8">
+                    <Image Source="avares://Tamagotchi/assets/advice.png" Width="100" Height="100"/>
+                    <TextBlock Text="*Projet à but pédagogique" FontSize="13"
+                               Foreground="#666666" HorizontalAlignment="Center"/>
+                </StackPanel>
+
+            </StackPanel>
+        </ScrollViewer>
+
+    </Panel>
+</UserControl>

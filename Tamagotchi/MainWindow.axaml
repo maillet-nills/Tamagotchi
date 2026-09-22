@@ -2,8 +2,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" d:DesignWidth="720" d:DesignHeight="1080"
+        Width="400"
+        Height="600"
         x:Class="Tamagotchi.MainWindow"
-        Title="Tamagotchi">
+        Title="Tamagotchi"
+        CanResize="False">
+
+        <ContentControl Name="MainContent"></ContentControl>
     
 </Window>
