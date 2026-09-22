@@ -7,6 +7,6 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
-        MainContent.Content = new CreationView();
+        MainContent.Content = new view.CreationView();
     }
 }

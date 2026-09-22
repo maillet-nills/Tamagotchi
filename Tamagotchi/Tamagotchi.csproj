@@ -22,4 +22,20 @@
     <ItemGroup>
         <AvaloniaResource Include="assets\**" />
     </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="view\CreationView.axaml.cs">
+        <DependentUpon>CreationView.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="MainWindow.axaml.cs">
+        <DependentUpon>MainWindow.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <AdditionalFiles Include="view\CreationView.axaml" />
+      <AdditionalFiles Include="view\MainWindow.axaml" />
+    </ItemGroup>
 </Project>

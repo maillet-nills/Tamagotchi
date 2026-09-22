@@ -23,10 +23,14 @@ build_property.EnableGeneratedComInterfaceComImportInterop =
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
-[/home/Nwt/Code Projects/C\#/AvaloniaUI/Tamagotchi/Tamagotchi/App.axaml]
+[/home/Nwt/Code Projects/C\#/AvaloniaUI/Tamagotchi/Tamagotchi/view/CreationView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/home/Nwt/Code Projects/C\#/AvaloniaUI/Tamagotchi/Tamagotchi/CreationView.axaml]
+[/home/Nwt/Code Projects/C\#/AvaloniaUI/Tamagotchi/Tamagotchi/view/MainWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+
+[/home/Nwt/Code Projects/C\#/AvaloniaUI/Tamagotchi/Tamagotchi/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [/home/Nwt/Code Projects/C\#/AvaloniaUI/Tamagotchi/Tamagotchi/MainWindow.axaml]
