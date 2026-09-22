@@ -5,5 +5,123 @@
         xmlns:view="clr-namespace:Tamagotchi.view"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Tamagotchi.view.GameView">
-    Ceci est la game view !
+    <Panel>
+
+        <Rectangle>
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0%,0%" EndPoint="100%,100%">
+                    <GradientStop Color="#E7D9F7" Offset="0"/>
+                    <GradientStop Color="#D8F3E3" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <Canvas ClipToBounds="False">
+            <Ellipse Width="140" Height="140" Fill="#8E44AD" Opacity="0.12"
+                     Canvas.Left="-50" Canvas.Top="-60"/>
+            <Ellipse Width="90" Height="90" Fill="#27AE60" Opacity="0.15"
+                     Canvas.Left="320" Canvas.Top="30"/>
+            <Ellipse Width="60" Height="60" Fill="#27AE60" Opacity="0.10"
+                     Canvas.Left="30" Canvas.Top="480"/>
+            <Ellipse Width="180" Height="180" Fill="#8E44AD" Opacity="0.10"
+                     Canvas.Left="250" Canvas.Top="440"/>
+
+            <Polygon Points="0,60 60,60 30,0" Fill="#8E44AD" Opacity="0.12"
+                      Canvas.Left="330" Canvas.Top="200"/>
+            <Polygon Points="0,0 70,0 35,70" Fill="#27AE60" Opacity="0.12"
+                      Canvas.Left="-25" Canvas.Top="150"/>
+            <Polygon Points="0,50 50,50 25,0" Fill="#8E44AD" Opacity="0.10"
+                      Canvas.Left="20" Canvas.Top="20"/>
+        </Canvas>
+
+        <ScrollViewer Padding="20">
+            <StackPanel HorizontalAlignment="Center" Spacing="30" Width="340">
+
+                <!-- TOP -->
+                <Image Source="avares://Tamagotchi/assets/logo.png"
+                       Width="220" HorizontalAlignment="Center"/>
+
+                <!-- MIDDLE -->
+                <Border Background="#E6FFFFFF"
+                        CornerRadius="16" Padding="24"
+                        BoxShadow="0 4 12 0 #22000000">
+                    <StackPanel Spacing="12" HorizontalAlignment="Center">
+
+                        <TextBlock Text="Nom du Tamagotchi"
+                                   FontSize="18" FontWeight="SemiBold"
+                                   HorizontalAlignment="Center"/>
+
+                        <Image Source="avares://Tamagotchi/assets/tamago.png"
+                               Width="140" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+
+                <!-- BOTTOM -->
+                <Border Background="#E6FFFFFF"
+                        CornerRadius="16" Padding="16"
+                        BoxShadow="0 4 12 0 #22000000">
+                    <UniformGrid Columns="5" Rows="1">
+
+                        <StackPanel Spacing="4" Margin="4">
+                            <Button Name="BTNJouer" Click="BTNJouer_OnClick" Width="52" Height="52" CornerRadius="26"
+                                    Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                                    Background="#8E44AD" Foreground="White">
+                                <Viewbox Width="24" Height="24" Stretch="Uniform">
+                                    <TextBlock Text="🎮"/>
+                                </Viewbox>
+                            </Button>
+                            <TextBlock Text="Jouer" FontSize="11" HorizontalAlignment="Center" Foreground="#555555"/>
+                        </StackPanel>
+                        
+                        <StackPanel Spacing="4" Margin="4">
+                            <Button Name="BTNNourrir" Click="BTNNourrir_OnClick" Width="52" Height="52" CornerRadius="26"
+                                    Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                                    Background="#27AE60" Foreground="White">
+                                <Viewbox Width="24" Height="24" Stretch="Uniform">
+                                    <TextBlock Text="🍖"/>
+                                </Viewbox>
+                            </Button>
+                            <TextBlock Text="Nourrir" FontSize="11" HorizontalAlignment="Center" Foreground="#555555"/>
+                        </StackPanel>
+                        
+                        <StackPanel Spacing="4" Margin="4">
+                            <Button Name="BTNGronder" Click="BTNGronder_OnClick" Width="52" Height="52" CornerRadius="26"
+                                    Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                                    Background="#E67E22" Foreground="White">
+                                <Viewbox Width="24" Height="24" Stretch="Uniform">
+                                    <TextBlock Text="⚠️"/>
+                                </Viewbox>
+                            </Button>
+                            <TextBlock Text="Gronder" FontSize="11" HorizontalAlignment="Center" Foreground="#555555"/>
+                        </StackPanel>
+                        
+                        <StackPanel Spacing="4" Margin="4">
+                            <Button Name="BTNTravailler" Click="BTNTravailler_OnClick" Width="52" Height="52" CornerRadius="26"
+                                    Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                                    Background="#2980B9" Foreground="White">
+                                <Viewbox Width="24" Height="24" Stretch="Uniform">
+                                    <TextBlock Text="💼"/>
+                                </Viewbox>
+                            </Button>
+                            <TextBlock Text="Travail" FontSize="11" HorizontalAlignment="Center" Foreground="#555555"/>
+                        </StackPanel>
+                        
+                        <StackPanel Spacing="4" Margin="4">
+                            <Button Name="BTNDormir" Click="BTNDormir_OnClick" Width="52" Height="52" CornerRadius="26"
+                                    Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                                    Background="#D10225" Foreground="White">
+                                <Viewbox Width="24" Height="24" Stretch="Uniform">
+                                    <TextBlock Text="😴"/>
+                                </Viewbox>
+                            </Button>
+                            <TextBlock Text="Dormir" FontSize="11" HorizontalAlignment="Center" Foreground="#555555"/>
+                        </StackPanel>
+
+                    </UniformGrid>
+                </Border>
+
+            </StackPanel>
+        </ScrollViewer>
+
+    </Panel>
 </UserControl>
