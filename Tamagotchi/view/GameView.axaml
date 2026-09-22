@@ -4,7 +4,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:view="clr-namespace:Tamagotchi.view"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-        x:Class="Tamagotchi.view.GameView">
+        x:Class="Tamagotchi.view.GameView"
+        x:DataType="view:GameViewModel">
     <Panel>
 
         <Rectangle>
@@ -47,7 +48,7 @@
                         BoxShadow="0 4 12 0 #22000000">
                     <StackPanel Spacing="12" HorizontalAlignment="Center">
 
-                        <TextBlock Text="Nom du Tamagotchi"
+                        <TextBlock Text="{Binding Nom}"
                                    FontSize="18" FontWeight="SemiBold"
                                    HorizontalAlignment="Center"/>
 

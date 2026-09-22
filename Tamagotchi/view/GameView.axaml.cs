@@ -9,10 +9,12 @@ namespace Tamagotchi.view;
 
 public partial class GameView : UserControl
 {
+    private readonly GameViewModel gameViewModel;
     public GameView(string nom, Race race)
     {
         InitializeComponent();
-        Tamagotchi tamagotchi = new Tamagotchi(nom, race);
+        gameViewModel = new GameViewModel(nom, race);
+        DataContext = gameViewModel;
     }
 
     private void BTNJouer_OnClick(object? sender, RoutedEventArgs e)
