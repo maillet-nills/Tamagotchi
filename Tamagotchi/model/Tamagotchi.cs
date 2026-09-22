@@ -7,7 +7,7 @@ public class Tamagotchi
     private NvSatisfaction nvSatisfaction { get; set; }
     private NvTaille nvTaille { get; set; }
 
-    public Tamagotchi(string nom, Race race, NvSatisfaction nvSatisfaction, NvTaille nvTaille)
+    public Tamagotchi(string nom, Race race)
     {
         this.nom = nom;
         this.race = race;

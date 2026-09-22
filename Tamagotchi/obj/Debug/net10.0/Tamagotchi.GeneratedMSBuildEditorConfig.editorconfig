@@ -35,3 +35,6 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [/home/Nwt/Code Projects/C\#/AvaloniaUI/Tamagotchi/Tamagotchi/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/Nwt/Code Projects/C\#/AvaloniaUI/Tamagotchi/Tamagotchi/view/GameView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
