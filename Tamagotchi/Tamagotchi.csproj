@@ -12,6 +12,7 @@
         <PackageReference Include="Avalonia.Desktop" Version="11.3.12"/>
         <PackageReference Include="Avalonia.Themes.Fluent" Version="11.3.12"/>
         <PackageReference Include="Avalonia.Fonts.Inter" Version="11.3.12"/>
+        <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0"/>
         <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
         <PackageReference Include="Avalonia.Diagnostics" Version="11.3.12">
             <IncludeAssets Condition="'$(Configuration)' != 'Debug'">None</IncludeAssets>
@@ -36,6 +37,5 @@
 
     <ItemGroup>
       <AdditionalFiles Include="view\CreationView.axaml" />
-      <AdditionalFiles Include="view\MainWindow.axaml" />
     </ItemGroup>
 </Project>
