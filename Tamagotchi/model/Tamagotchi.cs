@@ -30,8 +30,6 @@ public class Tamagotchi
                 this.nvSatisfaction = NvSatisfaction.TresSatisfait;
                 break;
         }
-        
-        Console.WriteLine(this.nvSatisfaction);
     }
 
     public void LowerSatisfaction()
@@ -46,8 +44,6 @@ public class Tamagotchi
                 this.nvSatisfaction = NvSatisfaction.PasSatisfait;
                 break;
         }
-        
-        Console.WriteLine(this.nvSatisfaction);
     }
 
     public void AddTaille()
