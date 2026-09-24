@@ -1,3 +1,5 @@
+using System;
+
 namespace Tamagotchi;
 
 public class Tamagotchi
@@ -14,6 +16,38 @@ public class Tamagotchi
         this.race = race;
         this.nvSatisfaction = NvSatisfaction.Satisfait;
         this.nvTaille = NvTaille.Petit;
+    }
+
+    public void AddSatisfaction()
+    {
+        switch (this.nvSatisfaction)
+        {
+            case NvSatisfaction.PasSatisfait:
+                this.nvSatisfaction = NvSatisfaction.Satisfait;
+                break;
+            
+            case NvSatisfaction.Satisfait:
+                this.nvSatisfaction = NvSatisfaction.TresSatisfait;
+                break;
+        }
+        
+        Console.WriteLine(this.nvSatisfaction);
+    }
+
+    public void LowerSatisfaction()
+    {
+        switch (this.nvSatisfaction)
+        {
+            case NvSatisfaction.TresSatisfait:
+                this.nvSatisfaction = NvSatisfaction.Satisfait;
+                break;
+            
+            case NvSatisfaction.Satisfait:
+                this.nvSatisfaction = NvSatisfaction.PasSatisfait;
+                break;
+        }
+        
+        Console.WriteLine(this.nvSatisfaction);
     }
 
 }

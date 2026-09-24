@@ -19,26 +19,26 @@ public partial class GameView : UserControl
 
     private void BTNJouer_OnClick(object? sender, RoutedEventArgs e)
     {
-        throw new System.NotImplementedException();
+        gameViewModel.TamagotchiModel.AddSatisfaction();
     }
 
     private void BTNNourrir_OnClick(object? sender, RoutedEventArgs e)
     {
-        throw new System.NotImplementedException();
+        gameViewModel.TamagotchiModel.AddSatisfaction();
     }
 
     private void BTNGronder_OnClick(object? sender, RoutedEventArgs e)
     {
-        throw new System.NotImplementedException();
+        gameViewModel.TamagotchiModel.LowerSatisfaction();
     }
 
     private void BTNTravailler_OnClick(object? sender, RoutedEventArgs e)
     {
-        throw new System.NotImplementedException();
+        gameViewModel.TamagotchiModel.LowerSatisfaction();
     }
 
     private void BTNDormir_OnClick(object? sender, RoutedEventArgs e)
     {
-        throw new System.NotImplementedException();
+        gameViewModel.TamagotchiModel.AddSatisfaction();
     }
 }
