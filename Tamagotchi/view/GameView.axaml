@@ -6,6 +6,40 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Tamagotchi.view.GameView"
         x:DataType="view:GameViewModel">
+    
+    <UserControl.Styles>
+        <Style Selector="Image.balance">
+            <Style.Animations>
+                <Animation Duration="0:0:2"
+                           IterationCount="Infinite"
+                           PlaybackDirection="Alternate"
+                           Easing="SineEaseInOut">
+                    <KeyFrame Cue="0%">
+                        <Setter Property="RotateTransform.Angle" Value="-10"/>
+                    </KeyFrame>
+                    <KeyFrame Cue="100%">
+                        <Setter Property="RotateTransform.Angle" Value="10"/>
+                    </KeyFrame>
+                </Animation>
+            </Style.Animations>
+        </Style>
+        
+        <Style Selector="Button">
+            <Setter Property="RenderTransform" Value="none"/>
+            <Setter Property="Transitions">
+                <Transitions>
+                    <TransformOperationsTransition Property="RenderTransform"
+                                                   Duration="0:0:0.15"/>
+                </Transitions>
+            </Setter>
+        </Style>
+        
+        <Style Selector="Button:pointerover">
+            <Setter Property="RenderTransform" Value="scale(1.15)"/>
+        </Style>
+        
+    </UserControl.Styles>
+    
     <Panel>
 
         <Rectangle>
@@ -53,7 +87,7 @@
                                    HorizontalAlignment="Center"/>
 
                         <Image Source="avares://Tamagotchi/assets/tamago.png"
-                               Width="140" HorizontalAlignment="Center"/>
+                               Width="140" HorizontalAlignment="Center" Classes="balance"/>
                     </StackPanel>
                 </Border>
 
