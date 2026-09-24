@@ -50,4 +50,42 @@ public class Tamagotchi
         Console.WriteLine(this.nvSatisfaction);
     }
 
+    public void AddTaille()
+    {
+        switch (nvTaille)
+        {
+            case NvTaille.TresPetit:
+                this.nvTaille = NvTaille.Petit;
+                break;
+            case NvTaille.Petit:
+                this.nvTaille = NvTaille.Moyen;
+                break;
+            case NvTaille.Moyen:
+                this.nvTaille = NvTaille.Gros;
+                break;
+            case NvTaille.Gros:
+                this.nvTaille = NvTaille.TresGros;
+                break;
+        }
+    }
+    
+    public void LowerTaille()
+    {
+        switch (nvTaille)
+        {
+            case NvTaille.TresGros:
+                this.nvTaille = NvTaille.Gros;
+                break;
+            case NvTaille.Gros:
+                this.nvTaille = NvTaille.Moyen;
+                break;
+            case NvTaille.Moyen:
+                this.nvTaille = NvTaille.Petit;
+                break;
+            case NvTaille.Petit:
+                this.nvTaille = NvTaille.TresPetit;
+                break;
+        }
+    }
+
 }

@@ -25,6 +25,7 @@ public partial class GameView : UserControl
     private void BTNNourrir_OnClick(object? sender, RoutedEventArgs e)
     {
         gameViewModel.TamagotchiModel.AddSatisfaction();
+        gameViewModel.TamagotchiModel.AddTaille();
     }
 
     private void BTNGronder_OnClick(object? sender, RoutedEventArgs e)
@@ -35,6 +36,7 @@ public partial class GameView : UserControl
     private void BTNTravailler_OnClick(object? sender, RoutedEventArgs e)
     {
         gameViewModel.TamagotchiModel.LowerSatisfaction();
+        gameViewModel.TamagotchiModel.LowerTaille();
     }
 
     private void BTNDormir_OnClick(object? sender, RoutedEventArgs e)
